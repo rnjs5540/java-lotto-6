@@ -27,13 +27,14 @@ public class Store {
         System.out.println(count + "개를 구매했습니다.");
 
         List<Lotto> lottos = new ArrayList<>();
-        for (int i = 0; i < count; ++i)
-             lottos.add(issueLotto());
+        for (int i = 0; i < count; ++i) {
+            lottos.add(issueLotto());
+        }
 
         return lottos;
     }
     private Lotto issueLotto() {
-        List<Integer> numbers = Randoms.pickUniqueNumbersInRange(1, 45, 6);
+        List<Integer> numbers = new ArrayList<>(Randoms.pickUniqueNumbersInRange(1, 45, 6));
         return new Lotto(numbers);
     }
 }
