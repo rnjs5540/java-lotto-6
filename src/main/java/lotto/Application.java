@@ -2,6 +2,14 @@ package lotto;
 
 public class Application {
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        Person person = new Person();
+        Goverment goverment = new Goverment();
+
+        person.buyLottos();
+        person.printLottos();
+        //goverment.inputWinningNumbers();
+        //goverment.inputBonusNumber();
+
+
     }
 }
