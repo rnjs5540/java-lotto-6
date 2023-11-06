@@ -18,4 +18,7 @@ public class Person {
         for (Lotto lotto : lottos)
             lotto.printLotto();
     }
+    void getstatistics() {
+
+    }
 }
